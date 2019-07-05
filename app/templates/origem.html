@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block title %} Origem {% endblock %}
+
+<!-- Conteúdo página COMEÇO -->
+
+{% block page_header %}
+
+
+<h1>ORIGEM</h1>
+{% endblock %}
+
+{% block page_body %}
+<ul class="list-unstyled">
+  <li class="media">
+    <img src="{{ url_for('static', filename='img/JamesNaismith.jpg') }}" class="align-self-center mr-3" height="150px " alt="..." title="James Naismith">
+    <div class="media-body">
+      <p>O basquetebol foi criado em 1891 pelo professor de Educação Física canadense James Naismith (1861-1940).<br>
+        Na época, ele trabalhava na Associação Cristã de Moços de Springfield, Massachusetts, nos Estados Unidos.<br>
+        O esporte surgiu como uma alternativa ao inverno rigoroso da região, em detrimento dos outros praticados ao ar
+        livre como o basebol e o futebol.</p>
+      <p class="mb-0">Além disso, a ideia original era criar um esporte menos violento que o futebol americano. Aliado à
+        isso, o professor criador pretendia integrar os alunos nas aulas de educação física e estimular a coletividade
+        dos grupos.</p>
+    </div>
+  </li>
+  <br>
+  <div class="media">
+    <div class="media-body">
+      <p>
+        O primeiro jogo oficial de basquete foi disputado em 1892, e teve uma plateia aproximada de 200 pessoas. Nesse
+        mesmo ano, as mulheres começaram a praticar essa modalidade. Já a primeira partida feminina ocorreu em 1896.<br>
+        A modalidade feminina foi inserida pela professora de educação física Senda Berenson (1868-1954). Foi também em
+        1896 que o esporte chegou ao Brasil, trazido pelo norte-americano Augusto Louis.<br>
+        Curioso notar que no início o esporte era praticado com uma bola semelhante à de futebol. Somente em 1984 que a
+        bola de basquete, tal qual conhecemos hoje, foi desenvolvida por uma empresa de Massachusetts.<br></p>
+    </div>
+    <img src="{{ url_for('static', filename='img/Origem1.jpg') }}" class="ml-3" alt="..." height="150px">
+  </div>
+  <br>
+  <div class="media">
+    <img src="{{ url_for('static', filename='img/Origem2.jpg') }}" class="mr-3" alt="..." height="150px">
+    <div class="media-body">
+      <p>
+        Somente mais tarde que o basquetebol foi considerado um esporte olímpico. O primeiro jogo de basquete aconteceu
+        nos Jogos Olímpicos de Verão de 1936, em Berlim.<br>
+        Esse momento representou uma grande conquista para a disseminação do esporte pelo mundo. Hoje, cerca de 200
+        países são filiados à FIBA, Federação Internacional de Basquetebol.<br>
+        Essa organização foi fundada em 1932 e é responsável por organizar os eventos relacionados com o basquete em
+        nível mundial. Atualmente, sua sede está localizada em Genebra, na Suíça.</p>
+    </div>
+  </div>
+</ul>
+<div class="container">
+  <div class="row">
+    <div class="col">
+    </div>
+    <div class="col">
+      <img src="{{ url_for('static', filename='img/Origem3.jpg') }}" alt="" title="Faltou">
+    </div>
+    <div class="col">
+      <img src="{{ url_for('static', filename='img/Origem4.jpg') }}" alt="" title="Criatividade">
+    </div>
+    <div class="col">
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block page_footer %}
+
+{% endblock %}

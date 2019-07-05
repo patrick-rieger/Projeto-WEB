@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+
+{% block title %}NOTÍCIAS{% endblock %}
+
+{% block page_header %}
+<h1>NOTÍCIAS</h1>
+<p>Últimas atualizações no mundo do basquetebol. FONTE: 
+  <a href="https://globoesporte.globo.com/basquete/"> GloboEsporte</a></p>
+
+  {% endblock %}
+
+{% block page_body %}
+
+{% for noticia in noticias %}
+<div class="card-deck">
+  <div class="card border-dark mb-3" style="max-width: 18rem;">
+    <img src="{{ noticia.imagem }}" class="card-img-top" alt="Era pra ter a imagem da noticia">
+    <div class="card-body">
+      <h5 class="card-title">{{ noticia.titulo }}</h5>
+      <p class="card-text">{{ noticia.resumo }}</p>
+    </div>
+    <div class="card-footer">
+      <a href="{{ noticia.link }}" class="card-link">Link da notícia</a>
+      <div class="float-right">
+        <small class="text-muted">{{ noticia.id }}</small>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %} 
+
+<!-- 
+<div class="content" id="noticia">
+    <h1 class="heading" id="noticia">Notícias</h1>
+    <p class="description" id="noticia">Últimas atualizações no mundo do basquetebol. FONTE :<a href="https://globoesporte.globo.com/basquete/">GloboEsporte</a></p><a class="card" id="noticia" href="#!">
+      <div class="front" style="background-image: url(static/img/1.jpg);">
+        <p>Lorem ipsum dolor sit amet consectetur adipisiLorem ipsum dolor sit amet consectetur adipisiLorem ipsum dolor sit amet consectetur adipisi.</p>
+      </div>
+      <div class="back">
+        <div>
+          <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
+          <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
+          <button class="button" id="noticia">Click Here</button>
+        </div>
+      </div></a><a class="card" href="#!" id="noticia">
+      <div class="front" style="background-image: url(//source.unsplash.com/300x402);">
+        <p>Lorem ipsum dolor sit amet consectetur adipisi.</p>
+      </div>
+      <div class="back" id="noticia">
+        <div>
+          <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
+          <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
+          <button class="button" id="noticia">Click Here</button>
+        </div>
+      </div></a><a class="card" href="#!" id="noticia">
+      <div class="front" style="background-image: url(//source.unsplash.com/300x403);">
+        <p>Lorem ipsum dolor sit amet consectetur adipisi.</p>
+      </div>
+      <div class="back">
+        <div>
+          <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
+          <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
+          <button class="button" id="noticia">Click Here</button>
+        </div>
+      </div></a><a class="card" id="noticia" href="#!">
+      <div class="front" style="background-image: url(//source.unsplash.com/300x404);">
+        <p>Lorem ipsum dolor sit amet consectetur adipisi.</p>
+      </div>
+      <div class="back" id="noticia">
+        <div>
+          <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
+          <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
+          <button class="button" id="noticia">Click Here</button>
+        </div>
+      </div></a><a class="card" href="#!" id="noticia">
+      <div class="front" style="background-image: url(//source.unsplash.com/300x405);">
+        <p>Lorem ipsum dolor sit amet consectetur adipisi.</p>
+      </div>
+      <div class="back">
+        <div>
+          <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
+          <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
+          <button class="button" id="noticia">Click Here</button>
+        </div>
+      </div></a><a class="card" href="#!" id="noticia">
+      <div class="front" style="background-image: url(//source.unsplash.com/300x406);">
+        <p>Lorem ipsum dolor sit amet consectetur adipisi.</p>
+      </div>
+      <div class="back">
+        <div>
+          <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
+          <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
+          <button class="button" id="noticia">Click Here</button>
+        </div>
+      </div></a>
+  </div> -->
+
+{% endblock %}

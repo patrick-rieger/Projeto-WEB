@@ -1,0 +1,526 @@
+{% extends 'base.html' %}
+
+{% block title %} Campeonatos - NBA - Basquete {% endblock %}
+
+{% block page_header %}
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('[data-toggle="popover"]').popover();
+  });
+</script>
+
+<div class="media">
+  <img src="{{ url_for('static', filename='img/NBA-logo.png') }}" width="7%" class="align-self-end mr-3" alt="Imagem: NBA-logo.png">
+  <div class="media-body">
+    <h1 class="mt-0">NBA</h1>
+    <p>NBA é a sigla de National Basketball Association (Associação Nacional de Basquetebol), uma liga profissional de
+      basquetebol dos Estados Unidos e Canadá.
+      Foi fundada em 1946, em Nova Iorque, com o nome <a
+        href="https://pt.wikipedia.org/wiki/Basketball_Association_of_America">BAA</a> (Basketball Association of
+      America).<br>
+      O nome NBA foi originado após fusão da BAA com a <a
+        href="https://pt.wikipedia.org/wiki/National_Basketball_League">NBL</a> (National Basketball League).
+    </p>
+    <p class="mb-0">A NBA é considerada uma das mais importantes ligas de basquetebol mundial, sendo que os seus
+      jogadores são os que recebem os mais elevados salários.
+      A liga possui 29 equipes dos Estados Unidos e uma equipe do Canadá.<br>
+      Todos os anos a NBA coroa uma franquia como a melhor equipe do basquete mundial.<br></p>
+  </div>
+</div>
+{% endblock %}
+
+{% block page_body %}
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <strong>Veja abaixo uma lista com todos os campeões da NBA desde de sua primeira edição:</strong>
+    </div>
+    <div class="col-5">
+      <div class="float-right">
+        <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+          data-placement="right"
+          data-content="
+            As finais da NBA são disputadas em uma série de melhor de 7 partidas, tendo o seguinte formato de mandos(ordem) de quadra: 2-2-1-1-1.
+            Ou seja, as duas primeiras partidas são disputadas na casa do time de melhor campanha;
+            as duas seguintes são disputadas na casa do time de pior campanha; e então tem-se os mandos alternados, caso necessário.
+            A série é encerrada quando uma das equipes alcança 4 vitórias. E o vencedor leva para casa o cobiçado Troféu Larry O'Brien.">
+          Aqui </button> um pequeno guia sobre as finais da NBA.
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<table class="table table-hover table-dark">
+  <thead align="center">
+    <tr>
+      <th scope="col">Temporada</th>
+      <th scope="col">Campeão</th>
+      <th scope="col">Resultado</th>
+      <th scope="col">Vice-Campeão</th>
+    </tr>
+  </thead>
+  <tbody align="center">
+    <tr>
+      <td>2017-18</td>
+      <td>Golden State Warriors</td>
+      <td>4 x 0</td>
+      <td>Cleveland Cavaliers</td>
+    </tr>
+    <tr>
+      <td>2016-17</td>
+      <td>Golden State Warriors</td>
+      <td>4 x 1</td>
+      <td>Cleveland Cavaliers</td>
+    </tr>
+    <tr>
+      <td>2015-16</td>
+      <td>Cleveland Cavaliers</td>
+      <td>4 x 3</td>
+      <td>Golden State Warriors</td>
+    </tr>
+    <tr>
+      <td>2014-15</td>
+      <td>Golden State Warriors</td>
+      <td>4 x 2</td>
+      <td>Cleveland Cavaliers</td>
+    </tr>
+    <tr>
+      <td>2013-14</td>
+      <td>San Antonio Spurs</td>
+      <td>4 x 1</td>
+      <td>Miami Heat</td>
+    </tr>
+    <tr>
+      <td>2012-13</td>
+      <td>Miami Heat</td>
+      <td>4 x 3</td>
+      <td>San Antonio Spurs</td>
+    </tr>
+    <tr>
+      <td>2011-12</td>
+      <td>Miami Heat</td>
+      <td>4 x 1</td>
+      <td>Oklahoma City Thunder</td>
+    </tr>
+    <tr>
+      <td>2010-11</td>
+      <td>Dallas Mavericks</td>
+      <td>4 x 2</td>
+      <td>Miami Heat</td>
+    </tr>
+    <tr>
+      <td>2009-10</td>
+      <td>Los Angeles Lakers</td>
+      <td>4 x 3</td>
+      <td>Boston Celtics</td>
+    </tr>
+    <tr>
+      <td>2008-09</td>
+      <td>Los Angeles Lakers</td>
+      <td>4 x 1</td>
+      <td>Orlando Magic</td>
+    </tr>
+    <tr>
+      <td>2007-08</td>
+      <td>Boston Celtics</td>
+      <td>4 x 2</td>
+      <td>Los Angeles Lakers</td>
+    </tr>
+    <tr>
+      <td>2006-07</td>
+      <td>San Antonio Spurs</td>
+      <td>4 x 0</td>
+      <td>Cleveland Cavaliers</td>
+    </tr>
+    <tr>
+      <td>2005-06</td>
+      <td>Miami Heat</td>
+      <td>4 x 2</td>
+      <td>Dallas Mavericks</td>
+    </tr>
+    <tr>
+      <td>2004-05</td>
+      <td>San Antonio Spurs</td>
+      <td>4 x 3</td>
+      <td>Detroit Pistons</td>
+    </tr>
+    <tr>
+      <td>2003-04</td>
+      <td>Detroit Pistons</td>
+      <td>4 x 1</td>
+      <td>Los Angeles Lakers</td>
+    </tr>
+    <tr>
+      <td>2002-03</td>
+      <td>San Antonio Spurs</td>
+      <td>4 x 2</td>
+      <td>New Jersey Nets</td>
+    </tr>
+    <tr>
+      <td>2001-02</td>
+      <td>Los Angeles Lakers</td>
+      <td>4 x 0</td>
+      <td>New Jersey Nets</td>
+    </tr>
+    <tr>
+      <td>2000-01</td>
+      <td>Los Angeles Lakers</td>
+      <td>4 x 1</td>
+      <td>Philadelphia 76ers</td>
+    </tr>
+    <tr>
+      <td>1999-00</td>
+      <td>Los Angeles Lakers</td>
+      <td>4 x 2</td>
+      <td>Indiana Pacers</td>
+    </tr>
+    <tr>
+      <td> 1998-99</td>
+      <td>San Antonio Spurs</td>
+      <td>4 x 1</td>
+      <td>New York Knicks</td>
+    </tr>
+    <tr>
+      <td>1997-98</td>
+      <td>Chicago Bulls</td>
+      <td>4 x 2</td>
+      <td>Utah Jazz</td>
+    </tr>
+    <tr>
+      <td>1996-97</td>
+      <td>Chicago Bulls</td>
+      <td>4 x 2</td>
+      <td>Utah Jazz</td>
+    </tr>
+    <tr>
+      <td>1995-96</td>
+      <td>Chicago Bulls</td>
+      <td>4 x 2</td>
+      <td>Seattle SuperSonics</td>
+    </tr>
+    <tr>
+      <td>1994-95</td>
+      <td>Houston Rockets</td>
+      <td>4 x 0</td>
+      <td>Orlando Magic</td>
+    </tr>
+    <tr>
+      <td>1993-94</td>
+      <td>Houston Rockets</td>
+      <td>4 x 3</td>
+      <td>New York Knicks</td>
+    </tr>
+    <tr>
+      <td> 1992-93</td>
+      <td>Chicago Bulls</td>
+      <td>4 x 2</td>
+      <td>Phoenix Suns</td>
+    </tr>
+    <tr>
+      <td>1991-92</td>
+      <td>Chicago Bulls</td>
+      <td>4 x 2</td>
+      <td>Portland Trail Blazers</td>
+    </tr>
+    <tr>
+      <td>1990-91</td>
+      <td>Chicago Bulls</td>
+      <td>4 x 1</td>
+      <td>Los Angeles Lakers</td>
+    </tr>
+    <tr>
+      <td>1989-90</td>
+      <td>Detroit Pistons</td>
+      <td>4 x 1</td>
+      <td>Portland Trail Blazers</td>
+    </tr>
+    <tr>
+      <td>1988-89</td>
+      <td>Detroit Pistons</td>
+      <td>4 x 0</td>
+      <td>Los Angeles Lakers</td>
+    </tr>
+    <tr>
+      <td>1987-88</td>
+      <td>Los Angeles Lakers</td>
+      <td>4 x 3</td>
+      <td>Detroit Pistons</td>
+    </tr>
+    <tr>
+      <td>1986-87</td>
+      <td>Los Angeles Lakers</td>
+      <td>4 x 2</td>
+      <td>Boston Celtics</td>
+    </tr>
+    <tr>
+      <td> 1985-86</td>
+      <td>Boston Celtics</td>
+      <td>4 x 2</td>
+      <td>Houston Rockets</td>
+    </tr>
+    <tr>
+      <td>1984-85</td>
+      <td>Los Angeles Lakers</td>
+      <td>4 x 2</td>
+      <td>Boston Celtics</td>
+    </tr>
+    <tr>
+      <td>1983-84</td>
+      <td>Boston Celtics</td>
+      <td>4 x 3</td>
+      <td>Los Angeles Lakers</td>
+    </tr>
+    <tr>
+      <td>1982-83</td>
+      <td>Philadelphia 76ers</td>
+      <td>4 x 0</td>
+      <td>Los Angeles Lakers</td>
+    </tr>
+    <tr>
+      <td>1981-82</td>
+      <td>Los Angeles Lakers</td>
+      <td>4 x 2</td>
+      <td>Philadelphia 76ers</td>
+    </tr>
+    <tr>
+      <td>1980-81</td>
+      <td>Boston Celtics</td>
+      <td>4 x 2</td>
+      <td>Houston Rockets</td>
+    </tr>
+    <tr>
+      <td>1979-80</td>
+      <td>Los Angeles Lakers</td>
+      <td>4 x 2</td>
+      <td>Philadelphia 76ers</td>
+    </tr>
+    <tr>
+      <td> 1978-79</td>
+      <td>Seattle SuperSonics</td>
+      <td>4 x 1</td>
+      <td>Washington Bullets</td>
+    </tr>
+    <tr>
+      <td>1977-78</td>
+      <td>Washington Bullets</td>
+      <td>4 x 3</td>
+      <td>Seattle SuperSonics</td>
+    </tr>
+    <tr>
+      <td>1976-77</td>
+      <td>Portland Trail Blazers</td>
+      <td>4 x 2</td>
+      <td>Philadelphia 76ers</td>
+    </tr>
+    <tr>
+      <td>1975-76</td>
+      <td>Boston Celtics</td>
+      <td>4 x 2</td>
+      <td>Phoenix Suns</td>
+    </tr>
+    <tr>
+      <td>1974-75</td>
+      <td>Golden State Warriors</td>
+      <td>4 x 0</td>
+      <td>Washington Bullets</td>
+    </tr>
+    <tr>
+      <td>1973-74</td>
+      <td>Boston Celtics</td>
+      <td>4 x 3</td>
+      <td>Milwaukee Bucks</td>
+    </tr>
+    <tr>
+      <td>1972-73</td>
+      <td>New York Knicks</td>
+      <td>4 x 1</td>
+      <td>Los Angeles Lakers</td>
+    </tr>
+    <tr>
+      <td>1971-72</td>
+      <td>Los Angeles Lakers</td>
+      <td>4 x 1</td>
+      <td>New York Knicks</td>
+    </tr>
+    <tr>
+      <td>1970-71</td>
+      <td>Milwaukee Bucks</td>
+      <td>4 x 0</td>
+      <td>Baltimore Bullets</td>
+    </tr>
+    <tr>
+      <td>1969-70</td>
+      <td>New York Knicks</td>
+      <td>4 x 3</td>
+      <td>Los Angeles Lakers</td>
+    </tr>
+    <tr>
+      <td>1968-69 </td>
+      <td>Boston Celtics</td>
+      <td>4 x 3</td>
+      <td>Los Angeles Lakers</td>
+    </tr>
+    <tr>
+      <td>1967-68</td>
+      <td>Boston Celtics</td>
+      <td>4 x 2</td>
+      <td>Los Angeles Lakers</td>
+    </tr>
+    <tr>
+      <td>1966-67</td>
+      <td>Philadelphia 76ers</td>
+      <td>4 x 2</td>
+      <td>San Francisco Warriors</td>
+    </tr>
+    <tr>
+      <td>1965-66</td>
+      <td>Boston Celtics</td>
+      <td>4 x 3</td>
+      <td>Los Angeles Lakers</td>
+    </tr>
+    <tr>
+      <td>1964-65</td>
+      <td>Boston Celtics</td>
+      <td>4 x 1</td>
+      <td>Los Angeles Lakers</td>
+    </tr>
+    <tr>
+      <td>1963-64</td>
+      <td>Boston Celtics</td>
+      <td>4 x 1</td>
+      <td>San Francisco Warriors</td>
+    </tr>
+    <tr>
+      <td>1962-63</td>
+      <td>Boston Celtics</td>
+      <td>4 x 2</td>
+      <td>Los Angeles Lakers</td>
+    </tr>
+    <tr>
+      <td>1961-62</td>
+      <td>Boston Celtics</td>
+      <td>4 x 3</td>
+      <td>Los Angeles Lakers</td>
+    </tr>
+    <tr>
+      <td>1960-61</td>
+      <td>Boston Celtics</td>
+      <td>4 x 1</td>
+      <td>St. Louis Hawks</td>
+    </tr>
+    <tr>
+      <td>1959-60</td>
+      <td>Boston Celtics</td>
+      <td>4 x 3</td>
+      <td>St. Louis Hawks</td>
+    </tr>
+    <tr>
+      <td>1958-59</td>
+      <td>Boston Celtics</td>
+      <td>4 x 0</td>
+      <td>Minneapolis Lakers</td>
+    </tr>
+    <tr>
+      <td> 1957-58</td>
+      <td>St. Louis Hakws</td>
+      <td>4 x 2</td>
+      <td>Boston Celtics</td>
+    </tr>
+    <tr>
+      <td>1956-57</td>
+      <td>Boston Celtics</td>
+      <td>4 x 3</td>
+      <td>St. Louis Hakws</td>
+    </tr>
+    <tr>
+      <td>1955-56</td>
+      <td>Philaldephia Warriors</td>
+      <td>4 x 1</td>
+      <td>Ft. Wayne Pistons</td>
+    </tr>
+    <tr>
+      <td>1954-55</td>
+      <td>Syracuse Nationals</td>
+      <td>4 x 3</td>
+      <td>Ft. Wayne Pistons</td>
+    </tr>
+    <tr>
+      <td>1953-54</td>
+      <td>Minneapolis Lakers</td>
+      <td>4 x 3</td>
+      <td>Syracuse Nationals</td>
+    </tr>
+    <tr>
+      <td>1952-53</td>
+      <td>Minneapolis Lakers</td>
+      <td>4 x 1</td>
+      <td>New York Knicks</td>
+    </tr>
+    <tr>
+      <td>1951-52</td>
+      <td>Minneapolis Lakers</td>
+      <td>4 x 3</td>
+      <td>New York Knicks</td>
+    </tr>
+    <tr>
+      <td>1950-51</td>
+      <td>Rochester Royals</td>
+      <td>4 x 3</td>
+      <td>New York Knicks</td>
+    </tr>
+    <tr>
+      <td>1949-50</td>
+      <td>Minneapolis Lakers</td>
+      <td>4 x 2</td>
+      <td>Syracuse Nationals</td>
+    </tr>
+    <tr>
+      <td>1948-49</td>
+      <td>Minneapolis Lakers</td>
+      <td>4 x 2</td>
+      <td>Washington Capitols</td>
+    </tr>
+    <tr>
+      <td>1947-48</td>
+      <td>Baltimore Bullets</td>
+      <td>4 x 2</td>
+      <td>Philadelphia Warriors</td>
+    </tr>
+    <tr>
+      <td>1946-47</td>
+      <td>Philadelphia Warriors</td>
+      <td>4 x 1</td>
+      <td>Chicago Stags</td>
+    </tr>
+  </tbody>
+</table>
+
+{% endblock %}
+
+{% block page_footer %}
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <strong>As cinco primeiras posições no ranking dos jogadores com mais títulos da NBA são:</strong>
+      <li>Bill Russell (Boston Celtics) - 11 títulos</li>
+      <li>Sam Jones (Boston Celtics) - 10 títulos</li>
+      <li>John Havlicek/Tom Heinsohn/K.C. Jones/Tom Sanders (Boston Celtics) - 8 títulos</li>
+      <li>John Loscutoff/Frank Ramsey (Boston Celtics); Robert Horry (Houston Rockets/San Antonio Spurs/Los Angeles
+        Lakers) - 7 títulos</li>
+      <li>Kareem Abdul-Jabbar (Milwaukee Bucks/Los Angeles Lakers); Bob Cousy (Boston Celtics); Michael Jordan/Scottie
+        Pippen (Chicago Bulls) - 6 títulos</li>
+    </div>
+    <div class="col">
+      <strong>Os 5 maiores times campeões da NBA são:</strong>
+      <li>Boston Celtics - 17 títulos</li>
+      <li>Los Angeles Lakers - 16 títulos</li>
+      <li>Chicago Bulls - 6 títulos</li>
+      <li>Golden State Warriors - 6 títulos</li>
+      <li>San Antonio Spurs - 5 títulos</li>
+    </div>
+  </div>
+</div>
+<br>
+{% endblock %}
+

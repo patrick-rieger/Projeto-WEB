@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}Lista Usuários{% endblock %}
+
+{% block page_header %}
+<h1>LISTA DE USUÁRIOS</h1>
+{% endblock %}
+
+{% block page_body %}
+<table class="table table-hover table-dark" align="center">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Username</th>
+            <th scope="col">Password</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Excluir</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for usuario in usuarios %}
+        <tr>
+            <th scope="row">{{ usuario.id }}</td>
+            <td>{{ usuario.username }}</td>
+            <td>{{ usuario.password }}</td>
+            <td>{{ usuario.name }}</td>
+            <td>{{ usuario.email }}</td>
+            <td><a href="/excluir/{{ usuario.id }}">X</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+{% endblock %}
+
+{% block page_footer %}
+{% endblock %}

@@ -1,0 +1,95 @@
+
+.Navbar{
+  min-width: 100%;
+}
+
+.rodape{
+  background-color: #343a40;
+  box-shadow: 0px 0px 1px black;
+  min-width: 99%;
+  min-height: 60px;
+  padding: 10px;
+  margin-top: 0px;
+}
+
+.Carroselzin{
+  box-shadow: 0px 0px 10px #343a40;
+  width:68%;
+  height: 80%;
+  color:black;
+  background-color: red;
+  text-shadow: 10px 2px 8px black;
+}
+
+.paginas{
+  margin-bottom: 10px;
+}
+
+body {
+  background-color:  #db7b14;
+}
+
+.Barra{
+  width: 28%;
+  height: 60%;
+  display: block;
+  float: right;
+  border-color: darkgray;
+  border-width: 9px;
+}
+
+.page{
+  padding: 0px 50px 0px 50px;
+  min-height: 800px;
+  margin: 0px 50px 0px 50px;
+  background-color: lightgray;
+  box-shadow: 0px 0px 10px #343a40;
+}
+
+.page-header{
+  padding-top: 10px;
+  text-align: center;
+}
+
+.page-body{
+}
+
+.page-footer{
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: auto 100%;
+}
+
+div#logincard{
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 400px;
+  background-color: rgba(0,0,0,0.5) !important;
+}
+
+.icon{
+  position: absolute;
+  right: 20px;
+  top: -45px;
+  }
+
+div#login{
+  padding-top: 50px;
+  color: white;
+  height: 100%;
+  align-content: center;
+  align-items: center;
+}
+
+.alertas{
+  width: 200px;
+  
+}

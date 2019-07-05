@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Lista Usuários{% endblock %}
+
+{% block page_header %}
+{% endblock %}
+
+{% block page_body %}
+{% endblock %}
+
+{% block page_footer %}
+{% endblock %}

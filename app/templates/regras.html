@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+
+{% block title %} Regras {% endblock %}
+
+{% block page_header %}
+<h1>REGRAS DO BASQUETEBOL</h1>
+{% endblock %}
+
+{% block page_body %}
+<div class="container">
+  <div class="row">
+    <div class="col-2">
+      <nav id="navbar-example3" class="navbar navbar-light bg-light">
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link" href="#item-1">Objetivo</a>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link ml-3 my-1" href="#item-1-1">Vencer</a>
+            <a class="nav-link ml-3 my-1" href="#item-1-2">Pontos</a>
+          </nav>
+          <a class="nav-link" href="#item-2">Tempo</a>
+          <a class="nav-link" href="#item-3">Passes e arremessos</a>
+          <a class="nav-link" href="#item-4">Faltas</a>
+          <a class="nav-link" href="#item-5">Jogadores</a>
+          <a class="nav-link" href="#item-6">Quadra</a>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link ml-3 my-1" href="#item-6-1">Linhas Laterais</a>
+            <a class="nav-link ml-3 my-1" href="#item-6-2">Linhas Limites</a>
+            <a class="nav-link ml-3 my-1" href="#item-6-3">Linha Central</a>
+            <a class="nav-link ml-3 my-1" href="#item-6-4">Círculo Central</a>
+            <a class="nav-link ml-3 my-1" href="#item-6-5">Linha de 3 pontos</a>
+            <a class="nav-link ml-3 my-1" href="#item-6-6">Linha de Lance Livre</a>
+          </nav>
+        </nav>
+      </nav>
+    </div>
+    <div class="col">
+      <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+        <h4 id="item-1">Objetivo</h4>
+        <p>O basquetebol tem como objetivo inserir a bola no cesto correspondente à sua equipe.
+          Portanto, há dois cestos em cada extremidade de quadra a 3,05 metros do chão. O local onde está o cesto é
+          chamado de tabela.</p>
+        <h5 id="item-1-1">Vencer</h5>
+        <p>Ganha a equipe que fizer o maior número de pontos.</p>
+        <h5 id="item-1-2">Pontos</h5>
+        <p>Note que os pontos variam segundo o local de arremesso. Ou seja, para lance livre é somado um ponto, do
+          contrário, dois pontos são somados ao placar. Há ainda, os pontos feitos quando os jogadores estão próximos da
+          linha de três.
+          Como o próprio nome indica, nesse caso, três pontos são contados.</p>
+        <h4 id="item-2">Tempo</h4>
+        <p>O jogo é dividido em 4 tempos, sendo 10 minutos para cada. Ele é baseado em batidas, passes de bola e
+          posições de defesa e ataque.</p>
+        <h4 id="item-3">Passes e arremessos</h4>
+        <p>Os passes de bola podem ser: passe com a mão, passe de peito, passe picado (ou quicado), passe de ombro e
+          passe por cima da cabeça.<br>
+          Já os arremessos mais utilizados são a bandeja e o jump. As chamadas "enterradas" ocorrem mediante um salto e
+          a colocação da bola no cesto.<br>
+          Note que os jogadores não podem dar mais de três passos com a bola nas mãos. Antes disso, ele deve passar para
+          o colega do time.</p>
+        <h4 id="item-4">Faltas</h4>
+        <p>Num jogo de basquete um jogador não pode receber mais que 5 faltas. Se isso acontecer, ele está fora do jogo.
+          As faltam podem ser cometidas quando o jogador dá mais de dois passos sem quicar a bola.
+          Além disso, o jogador não pode permanecer mais que 5 segundos com a bola nas mãos. Isso faz com que o basquete
+          seja um jogo bem dinâmico.
+          Já na área denominada “garrafão”, os jogadores não podem permanecer mais de 3 segundos.
+          Por fim, e como é óbvio, agressões entre jogadores são consideradas faltas e ainda, se encostar nos braços ou
+          mãos do adversário que está com a bola.</p>
+        <h4 id="item-5">Jogadores</h4>
+        <p>O basquetebol é disputado entre duas equipes de 5 jogadores cada. São classificados em armadores (base),
+          extremos e postes (pivôs).
+          Isso dependerá de sua posição e objetivos no desenvolvimento do jogo. Os armadores estão localizados no centro
+          da quadra e, portanto, são a "cabeça" do time.
+          Os extremos, como o nome indica, são aqueles que ficam próximos das linhas laterais. Já os pivôs, são
+          responsáveis por maior parte dos arremessos de bola ao cesto.
+          Geralmente, os postes são jogadores maiores e mais ágeis da equipe. São eles também que fazem o rebote das
+          bolas, ou seja, recuperam a bola após o arremesso.</p>
+        <h4 id="item-6">Quadra</h4>
+        <p>O basquetebol pode ser jogado numa quadra fechada, ou mesmo, ao ar livre. As dimensões são de 28 metros de
+          comprimento por 15 metros de largura.
+          No mínimo ela apresenta um comprimento de 26 metros por 14 metros de largura.</p>
+
+        <img src="{{ url_for('static', filename='img/Quadra.jpg') }}" class="rounded mx-auto d-block" align="center" alt="Imagem:Quadra.jpg"
+          title="Quadra de Basquete">
+          <br>
+        <p>A quadra de basquetebol apresenta diversas linhas e marcações:</p>
+        <h5 id="item-6-1">Linhas Laterais</h5>
+        <p>Delimitam o espaço de jogo.</p>
+        <h5 id="item-6-2">Linhas Limites</h5>
+        <p>Também delimitam o espaço de jogo, no entanto, estão localizados atrás dos cestos.</p>
+        <h5 id="item-6-3">Linha Central</h5>
+        <p>Localizada bem no meio da quadra, ela divide o espaço total em dois iguais.</p>
+        <h5 id="item-6-4">Círculo Central</h5>
+        <p>Acima da linha central está um círculo desenhado bem no meio da quadra que possui cerca de 3,6 metros de
+          diâmetro.</p>
+        <h5 id="item-6-5">Linha de 3 pontos</h5>
+        <p>Linha circular localizada a 6,75 metros de cada cesto. Recebe esse nome pois os lances desse local valem 3
+          pontos.</p>
+        <h5 id="item-6-6">Linha de Lance Livre</h5>
+        <p>Linha de Lance Livre: localizada mais próxima do cesto e de maneira frontal os jogadores lançam a bola.</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+{% endblock %}

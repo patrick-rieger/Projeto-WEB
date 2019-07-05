@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %} ERROR {{ n }} {% endblock %}
+
+{% block page_body %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/404.css') }}">
+<div class="slashed">
+        <a href="{{ url_for('index') }}">
+                <div title="ERROR {{ n }}" class="top"></div>
+                <div title="ERROR {{ n }}" class="bot"></div>
+        </a>
+</div>
+<p align='center'>Clique para voltar a navegação</p>
+{% endblock %}
+{% block page_footer %}
+Não encontramos a página que você queria <br> {{ erro }}
+        {% endblock %}

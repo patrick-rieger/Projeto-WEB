@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %} Register {% endblock %}
+
+{% block page_body %}
+<div class="container" id="login">
+    <div class="d-flex justify-content-center h-100">
+        <div class="card" id="logincard" style="width: 400px;">
+            <div class="card-header">
+                R E G I S T E R
+                <a href="{{ url_for('index') }}">
+                    <div class="d-flex justify-content-end icon">
+                        <span> <img src="{{ url_for('static', filename='img/Bola.png') }}" width="90" height="90"
+                                title="BASQUETE">
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div class="card-body">
+                <form action="" method="POST">
+                    {{ form_register.csrf_token }}
+                    <div class="form-group">
+                        {{ wtf.form_field(form_register.name) }}
+                    </div>
+                    <div class="form-group">
+                        {{ wtf.form_field(form_register.email) }}
+                    </div>
+                    <div class="form-group">
+                        {{ wtf.form_field(form_register.username) }}
+                    </div>
+                    <div class="form-group">
+                        {{ wtf.form_field(form_register.password) }}
+                    </div>
+                    <div class="form-group">
+                        {{ wtf.form_field(form_register.password2) }}
+                    </div>
+                    <button type="submit" class="btn btn-outline-dark btn-block">Cadastre-se</button>
+                </form>
+            </div>
+            <div class="card-footer" align='center'>
+                Já tem uma conta? <a href="{{ url_for('login')}}"> Faça login</a>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+{% endblock %}

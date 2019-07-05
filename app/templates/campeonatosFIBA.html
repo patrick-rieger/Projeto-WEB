@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+
+{% block title %} Campeonatos - FIBA - Basquete {% endblock %}
+
+{% block page_header %}
+
+<h1>CAMPEONATO MUNDIAL DE BASQUETEBOL MASCULINO</h1>
+<p>
+  O Campeonato Mundial de Basquete (ou basquetebol) é o torneio realizado pela <a
+    href="https://pt.wikipedia.org/wiki/Federa%C3%A7%C3%A3o_Internacional_de_Basquetebol">FIBA</a> reunindo as seleções
+  nacionais deste esporte.
+  É realizado a cada quatro anos, cuja primeira edição foi sediada na Argentina em 1950 (a seleção anfitriã sagrou-se
+  campeã). Nesta oportunidade, ocorreu apenas o torneio masculino.<br>
+  A primeira edição do torneio feminino aconteceu somente em 1953 e os Estados Unidos foi o vencedor.</p>
+<p>A Federação Internacional de Basquete (FIBA), é uma associação que organiza e regula o esporte em nível mundial.
+  A FIBA também definiu as regras internacionais de basquetebol, especificando equipamentos, fiscalizando a
+  transferência de atletas entre países,
+  controla ainda os arbítros em nível mundial e controla também todo investimento feito no esporte.</p>
+
+{% endblock %}
+
+
+{% block page_body %}
+
+<strong>Abaixo uma tabela com as consquistas de medalhas por País:</strong>
+<table class="table table-hover table-dark">
+  <thead align="center">
+    <tr>
+      <th scope="col">Time</th>
+      <th scope="col"><img src="{{ url_for('static', filename='img/MedalhaOuro.png') }}" width="30px" alt="Imagem: MedalhaOuro.png"
+          title="Medalha de Ouro"><br>Medalhas de Ouro</th>
+      <th scope="col"><img src="{{ url_for('static', filename='img/MedalhaPrata.png') }}" width="40px" alt="Imagem: MedalhaPrata.png"
+          title="Medalha de Prata"><br>Medalhas de Prata</th>
+      <th scope="col"><img src="{{ url_for('static', filename='img/MedalhaBronze.png') }}" width="40px" alt="Imagem: MedalhaBronze.png"
+          title="Medalha de Bronze"><br>Medalhas de Bronze</th>
+    </tr>
+  </thead>
+  <tbody align="center">
+    <tr>
+      <th scope="row"><img src="{{ url_for('static', filename='img/Bandeiras/us.png') }}" alt="Bandeira dos Estados Unidos"
+          title="Estados Unidos da América"></th>
+      <td><strong>5</strong> (1954, 1986, 1994, 2010, 2014)</td>
+      <td><strong>3</strong> (1950, 1959, 1982)</td>
+      <td><strong>4</strong> (1974, 1990, 1998, 2006)</td>
+    </tr>
+    <tr>
+      <th scope="row"><img src="{{ url_for('static', filename='img/Bandeiras/Yugoslavia.png') }}" width="40px" alt="Bandeira da Iugoslávia"
+          title="Iugoslávia"></th>
+      <td><strong>5</strong> (1970, 1978, 1990, 1998, 2002)</td>
+      <td><strong>3</strong> (1963, 1967, 1974)</td>
+      <td><strong>2</strong> (1982, 1986)</td>
+    </tr>
+    <tr>
+      <th scope="row"><img src="{{ url_for('static', filename='img/Bandeiras/urss.png') }}" width="40px" alt="Bandeira da União Soviética"
+          title="União Soviética"></th>
+      <td><strong>3</strong> (1967, 1974, 1982)</td>
+      <td><strong>3</strong> (1978, 1986, 1990)</td>
+      <td><strong>2</strong> (1963, 1970)</td>
+    </tr>
+    <th scope="row"><img src="{{ url_for('static', filename='img/Bandeiras/br.png') }}" alt="Bandeira do Brasil" title="Brasil"></th>
+    <td><strong>2</strong> (1959, 1963)</td>
+    <td><strong>2</strong> (1954, 1970)</td>
+    <td><strong>2</strong> (1978, 1967)</td>
+    </tr>
+    <tr>
+      <th scope="row"><img src="{{ url_for('static', filename='img/Bandeiras/ar.png') }}" alt="Bandeira da Argentina" title="Argentina"></th>
+      <td><strong>1</strong> (1950)</td>
+      <td><strong>1</strong> (2002)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row"><img src="{{ url_for('static', filename='img/Bandeiras/es.png') }}" alt="Bandeira da Espanha" title="Espanha"></th>
+      <td><strong>1</strong> (2006)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <th scope="row"><img src="{{ url_for('static', filename='img/Bandeiras/ru.png') }}" alt="Bandeira da Rússia" title="Rússia"></th>
+    <td></td>
+    <td><strong>2</strong> (1994, 1998)</td>
+    <td></td>
+    </tr>
+    <tr>
+      <th scope="row"><img src="{{ url_for('static', filename='img/Bandeiras/gr.png') }}" alt="Bandeira da Grécia" title="Grécia"></th>
+      <td></td>
+      <td><strong>1</strong> (2006)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row"><img src="{{ url_for('static', filename='img/Bandeiras/rs.png') }}" alt="Bandeira da Sérvia" title="Sérvia"></th>
+      <td></td>
+      <td><strong>1</strong> (2014)</td>
+      <td></td>
+    </tr>
+    <th scope="row"><img src="{{ url_for('static', filename='img/Bandeiras/tr.png') }}" alt="Bandeira da Turquia" title="Turquia"></th>
+    <td></td>
+    <td><strong>1</strong> (2010)</td>
+    <td></td>
+    </tr>
+    <tr>
+      <th scope="row"><img src="{{ url_for('static', filename='img/Bandeiras/cl.png') }}" alt="Bandeira do Chile" title="Chile"></th>
+      <td></td>
+      <td></td>
+      <td><strong>2</strong> (1950, 1959)</td>
+    </tr>
+    <tr>
+      <th scope="row"><img src="{{ url_for('static', filename='img/Bandeiras/lt.png') }}" alt="Bandeira da Lituânia" title="Lituânia"></th>
+      <td></td>
+      <td></td>
+      <td><strong>1</strong> (2010)</td>
+    </tr>
+    <tr>
+      <th scope="row"><img src="{{ url_for('static', filename='img/Bandeiras/de.png') }}" alt="Bandeira da Alemanha" title="Alemanha"></th>
+      <td></td>
+      <td></td>
+      <td><strong>1</strong> (2002)</td>
+    </tr>
+    <tr>
+      <th scope="row"><img src="{{ url_for('static', filename='img/Bandeiras/hr.png') }}" alt="Bandeira da Croácia" title="Croácia"></th>
+      <td></td>
+      <td></td>
+      <td><strong>1</strong> (1994)</td>
+    </tr>
+    <tr>
+      <th scope="row"><img src="{{ url_for('static', filename='img/Bandeiras/ph.png') }}" alt="Bandeira das Filipinas" title="Filipinas"></th>
+      <td></td>
+      <td></td>
+      <td><strong>1</strong> (1954)</td>
+    </tr>
+    <tr>
+      <th scope="row"><img src="{{ url_for('static', filename='img/Bandeiras/fr.png') }}" alt="Bandeira da França" title="França"></th>
+      <td></td>
+      <td></td>
+      <td><strong>1</strong> (2014)</td>
+    </tr>
+
+  </tbody>
+</table>
+
+{% endblock %}
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
